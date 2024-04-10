@@ -47,6 +47,7 @@
             </div>
          </div>
       </div>
+      
       <div class="Customers">
          <div class="header">
             <select class="Customers-bar" onchange="showContent(this.value)">
@@ -69,11 +70,15 @@
                      1.點擊Customers並按下。
                      <hr>
                      2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/customers」。</div>
-                  <div class="main-blog__author">
-                  </div>
+               
                </div>
             </div>
             <div class="small-header anim" style="--delay: .3s">展示</div>
+            <div class="image-slider">
+               <button class="prev" onclick="changeImage(-1)"></button>
+               <img id="slider-image" src="assets/image/TestConfigurationsPageAsync/1.png" alt="1">
+               <button class="next" onclick="changeImage(1)"></button>
+            </div>
          </div>
          <div id="Customers2" class="content">
             <div class="main-header anim" style="--delay: 0s">點擊頁面Table中的所有Customer欄位</div>
@@ -204,8 +209,9 @@
                   </div>
                </div>
             </div>
-            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+            <div class="small-header anim" style="--delay: .3s">展示div>
          </div>
+      </div>
          <div id="Orders2" class="content">
             <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>
             <div class="main-blogs">
@@ -337,10 +343,11 @@
                      2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/devices」。
                   </div>
                   <div class="main-blog__author">
+                     
                   </div>
                </div>
             </div>
-            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
          </div>
          <div id="Devices2" class="content">
             <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>
@@ -569,7 +576,7 @@
                   </div>
                </div>
             </div>
-            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
          </div>
          <div id="Configurations2" class="content">
             <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
@@ -770,7 +777,7 @@
                   </div>
                </div>
             </div>
-            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
          </div>
          <div id="Stocks2" class="content">
             <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>

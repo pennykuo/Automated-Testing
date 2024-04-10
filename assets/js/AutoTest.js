@@ -1,17 +1,3 @@
-
-// window.addEventListener('resize', function() {
-//     var sidebar = document.querySelector('.sidebar');
-
-//     if (window.innerWidth > 1090) {
-//         sidebar.classList.remove('collapse');
-//     } else {
-//         sidebar.classList.add('collapse');
-//     }
-// });
-
-
-// window.dispatchEvent(new Event('resize'));
-
 function showContent(value) {
     const contents = document.querySelectorAll('.content');
     contents.forEach(content => {
@@ -27,10 +13,8 @@ function showContent(value) {
 
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.sidebar-link');
-    console.log('Clicked link:', links);
     
     var selects = document.querySelectorAll('select');
-    console.log('Corresponding select:', selects);
     selects.forEach(function(select) {
         select.style.display = 'none';
     });
@@ -49,9 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
             var select = document.querySelector('.' + link.textContent.trim()+'-bar');
             if (select) {
                 select.style.display = 'block';
-                console.log(select);
 
             }
         });
     });
 });
+var images = [
+    "assets/image/TestConfigurationsPageAsync/1.png",
+];
+var imageIndex = 0;
+
+function changeImage(direction) {
+    imageIndex = imageIndex + direction;
+    if (imageIndex < 0) {
+        imageIndex = images.length - 1;
+    } else if (imageIndex >= images.length) {
+        imageIndex = 0;
+    }
+    document.getElementById('slider-image').src = images[imageIndex];
+}
