@@ -1,0 +1,913 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+   <title>Penny results presentation website</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <link rel="stylesheet" href="assets/css/AutoTest.css" />
+   <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+   </noscript>
+</head>
+
+<body class="is-preload">
+
+   <!-- Header -->
+   <header id="header">
+
+   </header>
+
+   <div class="container">
+      <div class="sidebar">
+         <span class="logo">S</span>
+         <a class="logo-expand" href="#">Automated Testing</a>
+         <div class="side-wrapper">
+            <div class="side-title">MENU</div>
+            <div class="side-menu">
+               <!-- <a class="sidebar-link index is-active" href="#">
+                     Index
+                  </a> -->
+               <a class="sidebar-link Customers" href="#">
+                  Customers
+               </a>
+               <a class="sidebar-link Orders" href="#">
+                  Orders
+               </a>
+               <a class="sidebar-link Devices" href="#">
+                  Devices
+               </a>
+               <a class="sidebar-link Configurations" href="#">
+                  Configurations
+               </a>
+               <a class="sidebar-link Stocks" href="#">
+                  Stocks
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="Customers">
+         <div class="header">
+            <select class="Customers-bar" onchange="showContent(this.value)">
+               <option value="Customers0"></option>
+               <option value="Customers1">TestCustomersPageAsync</option>
+               <option value="Customers2">TestCustomersPageFindTableAsync</option>
+               <option value="Customers3">TestCustomersPageSearchAsync</option>
+               <option value="Customers4">TestCustomersPageNextPageAsync</option>
+               <option value="Customers5">TestCustomersPageLastPageAsync</option>
+               <option value="Customers6">TestCustomersPagePreviousPageAsync</option>
+               <option value="Customers7">TestCustomersPageFirstPageAsync</option>
+               <option value="Customers8">TestCustomersPageSelectAsync</option>
+            </select>
+         </div>
+         <div id="Customers1" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Customers跳轉頁面</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊Customers並按下。
+                     <hr>
+                     2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/customers」。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers2" class="content">
+            <div class="main-header anim" style="--delay: 0s">點擊頁面Table中的所有Customer欄位</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊Customer欄位。
+                     <hr>
+                     2.檢查是否出現彈跳視窗「Customers Detail」。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers3" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.在Serarch欄位中輸入「Trinity Innovative Solutions LLC」並且按下Enter。
+                     <hr>
+                     2.檢查Table是否出現「Trinity Innovative Solutions LLC」等字樣。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers4" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查下一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊下一頁直到第五頁為止。
+                     <hr>
+                     2.檢查是否在第五頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers5" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊最後一頁。
+                     <hr>
+                     2.檢查是否在最後一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers6" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查上一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊下一頁直到第五頁。
+                     <hr>
+                     2.點擊上一頁回到第一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers7" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點最後一頁。
+                     <hr/>
+                     2.點擊往第一頁。
+                     <hr/>
+                     3.檢查是否在第一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Customers8" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.下拉式選單選擇「20」。
+                     <hr>
+                     2.檢查表格內容是否為20。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+      </div>
+      <!--  -->
+      <div class="Orders">
+         <div class="header">
+            <select class="Orders-bar" onchange="showContent(this.value)">
+               <option value="Orders0"></option>
+               <option value="Orders1">TestOrdersPageAsync</option>
+               <option value="Orders2">TestOrdersModelAsync</option>
+               <option value="Orders3">TestOrdersPageSearchAsync</option>
+               <option value="Orders4">TestOrdersPageNextPageAsync</option>
+               <option value="Orders5">TestOrdersPageLastPageAsync</option>
+               <option value="Orders6">TestOrdersPagePreviousPageAsync</option>
+               <option value="Orders7">TestOrdersPageFirstPageAsync</option>
+               <option value="Orders8">TestOrdersPageSelectAsync</option>
+            </select>
+         </div>
+         <div id="Orders1" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Orders跳轉頁面</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊Orders並按下。
+                     <hr>
+                     2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/purchaseOrders」。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+         </div>
+         <div id="Orders2" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.選擇MODEL中的「MD-03D」。
+                     <hr>
+                     2.檢查table中的Models是否都有包含「MD-03D」。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders3" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.在Serarch欄位中輸入「180322」並且按下Enter。
+                     <hr>
+                     2.檢查Table是否出現「180322...」等字樣。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders4" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查下一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊下一頁直到第五頁為止。
+                     <hr>
+                     2.檢查是否在第五頁。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders5" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊最後一頁。
+                     <hr>
+                     2.檢查是否在最後一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders6" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查上一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊下一頁直到第五頁。
+                     <hr>
+                     2.點擊上一頁回到第一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders7" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點最後一頁。
+                     <hr>
+                     2.點擊往第一頁。
+                     <hr>
+                     3.檢查是否在第一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Orders8" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.下拉式選單選擇「20」。
+                     <hr>
+                     2.檢查表格內容是否為20。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+      </div>
+      <!--  -->
+      <div class="Devices">
+         <div class="header">
+            <select class="Devices-bar" onchange="showContent(this.value)">
+               <option value="Devices0"></option>
+               <option value="Devices1">TestDevicesPageAsync</option>
+               <option value="Devices2">TestDevicesPageModelAsync</option>
+               <option value="Devices3">TestDevicesPageSearchAsync</option>
+               <option value="Devices4">TestDevicesPageNextPageAsync</option>
+               <option value="Devices5">TestDevicesPageLastPageAsync</option>
+               <option value="Devices6">TestDevicesPagePreviousPageAsync</option>
+               <option value="Devices7">TestDevicesPageFirstPageAsync</option>
+               <option value="Devices8">TestDevicesPageSelectAsync</option>
+               <option value="Devices9">TestDevicesPageAddSuccessAsync</option>
+               <option value="Devices10">TestDevicesPageAddFailAsync</option>
+               <option value="Devices11">TestDevicesPageAssignFunctionAsync</option>
+               <option value="Devices12">TestDevicesAssignFunctionErrorAsync</option>
+            </select>
+         </div>
+         <div id="Devices1" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Devices跳轉頁面</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊Devices並按下。
+                     <hr>
+                     2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/devices」。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+         </div>
+         <div id="Devices2" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.選擇MODEL中的「BWC BC-04-4K」。
+                     <hr>
+                     2.檢查table中的Models是否都有包含「BWC BC-04-4K」。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices3" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.在Serarch欄位中輸入「WP81M10013」並且按下Enter。
+                     <hr>
+                     2.檢查Table是否出現「WP81M10013...」等字樣。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices4" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查下一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                      1.點擊下一頁直到第五頁為止。
+                     <hr>
+                     2.檢查是否在第五頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices5" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊最後一頁。
+                     <hr>
+                      2.檢查是否在最後一頁。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices6" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查上一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點擊下一頁直到第五頁。
+                     <hr>
+2.點擊上一頁回到第一頁。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices7" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.點最後一頁。
+                     <hr>
+                     2.點擊往第一頁。
+                     <hr>
+                     3.檢查是否在第一頁。
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices8" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.下拉式選單選擇「20」。
+                     <hr>
+                      2.檢查表格內容是否為20。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices9" class="content">
+            <div class="main-header anim" style="--delay: 0s">(成功)檢查Add Test Decvice功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.按下Add Test Device。
+                     <hr>
+                     2.檢查是否出現彈跳視窗「Add Test Device」。
+                     <hr>
+                     3.MODEL選擇「BWC BC-04-1080P」。
+                     <hr>
+                     4.輸入Serial Number，並按下CONFIRM。
+                     <hr>
+                     5.檢查是否出現成功符號。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices10" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Add Test Decvice功能(重複名稱)</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.按下Add Test Device。
+                     <hr>
+                     2.檢查是否出現彈跳視窗「Add Test Device」。
+                     <hr>
+                     3.MODEL選擇「BWC BC-04-1080P」。
+                     <hr>
+                     4.在Serial Number輸入「AutomationTest1」並按下CONFIRM。
+                     <hr>
+                     5.檢查是否出現失敗符號。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices11" class="content">
+            <div class="main-header anim" style="--delay: 0s">(成功)檢查ASSIGN CONFIGUTRATION功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.在Serarch欄位中輸入「AutoTest」並且按下Enter。
+                     <hr>
+                     2.選取Checkbox。
+                     <hr>
+                     3.按下Assign Configuration。
+                     <hr>
+                     4.檢查是否出現彈跳視窗「Assign Configuration」。
+                     <hr>
+                     5.Select Configuration選擇「Testbed」。
+                     <hr>
+                     6.按下ASSIGN。
+                     <hr>
+                     7.檢查是否出現成功符號。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Devices12" class="content">
+            <div class="main-header anim" style="--delay: 0s">(失敗)檢查ASSIGN CONFIGUTRATION功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">
+                     1.在Serarch欄位中輸入「AutoTest」並且按下Enter。
+                     <hr>
+                     2.選取Checkbox。
+                     <hr>
+                     3.按下Assign Configuration。
+                     <hr>
+                     4.檢查是否出現彈跳視窗「Assign Configuration」。
+                     <hr>
+                     5.Select Configuration選擇「Test01」。
+                     <hr>
+                     6.按下ASSIGN。
+                     <hr>
+                     7.檢查是否出現失敗符號。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+      </div>
+      <!--  -->
+      <div class="Configurations">
+         <div class="header">
+            <select class="Configurations-bar" onchange="showContent(this.value)">
+               <option value="Configurations0"></option>
+               <option value="Configurations1">TestConfigurationsPageAsync</option>
+               <option value="Configurations2">TestConfigurationsPageFindTableAsync</option>
+               <option value="Configurations3">TestConfigurationsPageSearchAsync</option>
+               <option value="Configurations4">TestConfigurationsPageNextPageAsync</option>
+               <option value="Configurations5">TestConfigurationsPageLastPageAsync</option>
+               <option value="Configurations6">TestConfigurationsPagePreviousPageAsync</option>
+               <option value="Configurations7">TestConfigurationsPageFirstPageAsync</option>
+               <option value="Configurations8">TestConfigurationsPageSelectAsync</option>
+               <option value="Configurations9">TestConfigurationsPagePreviousPageAsync</option>
+               <option value="Configurations10">TestConfigurationsPageFirstPageAsync</option>
+               <option value="Configurations11">TestConfigurationsPageSelectAsync</option>
+            </select>
+         </div>
+         <div id="Configurations1" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Configuration跳轉頁面</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊Configuration並按下。
+                     <hr>
+                     2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/configurations」。</div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+         </div>
+         <div id="Configurations2" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.在Serarch欄位中輸入「Allen Parish」並且按下Enter。
+                     <hr>
+                     2.檢查Table是否出現「Allen Parish」等字樣。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations3" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查下一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊下一頁直到第五頁為止。
+                     <hr>
+                     2.檢查是否在第五頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations4" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊最後一頁。
+                     <hr>
+                     2.檢查是否在最後一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations5" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查上一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊下一頁直到第五頁。
+                     <hr>
+                     2.點擊上一頁回到第一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations6" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點最後一頁。
+                     <hr>
+                     2.點擊往第一頁。
+                     <hr>
+                     3.檢查是否在第一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations7" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.下拉式選單選擇「20」。
+                     <hr>
+                     2.檢查表格內容是否為20。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations8" class="content">
+            <div class="main-header anim" style="--delay: 0s">(成功)檢查CREATE功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊CREATE按鈕。
+                     <hr>
+                     2.檢查是否出現彈跳視窗「Create Configuration」。
+                     <hr>
+                     3.輸入Name、URL、Passcode後按下CONFIRM。
+                     <hr>
+                     4.搜尋是否找到。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations9" class="content">
+            <div class="main-header anim" style="--delay: 0s">(失敗)檢查CREATE功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊CREATE按鈕。
+                     <hr>
+                     2.檢查是否出現彈跳視窗「Create Configuration」。
+                     <hr>
+                     3.輸入Name、URL、Passcode後按下CONFIRM。
+                     <hr>
+                     4.檢查是否出現失敗符號。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations10" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查DELETE功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.搜尋。
+                     <hr>
+                     2.選取項目。
+                     <hr>
+                     3.按下DELETE按鈕。
+                     <hr>
+                     4.檢查是否出現彈跳視窗「Delete Configuration」。
+                     <hr>
+                     5.按下CONFIRM按鈕。
+                     <hr>
+                     6.搜尋。
+                     <hr>
+                     7.檢查是否出現「No data available in table」。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Configurations11" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查修改功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.搜尋要修改的項目名稱。
+                     <hr>
+                     2.點擊修改。
+                     <hr>
+                     3.檢查是否跳出「Edit Configuration」視窗。
+                     <hr>
+                     4.修改Name、URL或Passcode。
+                     <hr>
+                     5.按下修改並等待「Edit Configuration」視窗關閉。
+                     <hr>
+                     6.搜尋並檢查是否修改成功。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+      </div>
+      <!--  -->
+      <div class="Stocks">
+         <div class="header">
+            <select class="Stocks-bar" onchange="showContent(this.value)">
+               <option value="Stocks0"></option>
+               <option value="Stocks1">TestStocksPageAsync</option>
+               <option value="Stocks2">TestStocksModelAsync</option>
+               <option value="Stocks3">TestStocksPageSearchAsync</option>
+               <option value="Stocks4">TestStocksPageNextPageAsync</option>
+               <option value="Stocks5">TestStocksPageLastPageAsync</option>
+               <option value="Stocks6">TestStocksPagePreviousPageAsync</option>
+               <option value="Stocks7">TestStocksPageFirstPageAsync</option>
+               <option value="Stocks8">TestStocksPageSelectAsync</option>
+               <option value="Stocks9">TestStocksPageConfigurationAsync</option>
+
+              
+            </select>
+         </div>
+         <div id="Stocks1" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Stocks跳轉頁面</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊Stocks並按下。
+                     <hr>
+                     2.檢查跳轉頁面URL為「https://cp2.japanwest.cloudapp.azure.com/stocks」。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">Most Content</div>
+         </div>
+         <div id="Stocks2" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查MODEL功能</div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.選擇MODEL中的「MD-03D」。
+                     <hr>
+                     2.檢查table中的Models是否都有包含「MD-03D」。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks3" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Search功能
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.在Serarch欄位中輸入「Trinity Innovative Solutions LLC」並且按下Enter。
+                     <hr>
+                     2.檢查Table是否出現「Trinity Innovative Solutions LLC」等字樣。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks4" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查下一頁功能
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊下一頁直到第五頁為止。
+                     <hr>
+                     2.檢查是否在第五頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks5" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊最後一頁。
+                     <hr>
+                     2.檢查是否在最後一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks6" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查上一頁功能
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點擊下一頁直到第五頁。
+                     <hr>
+                     2.點擊上一頁回到第一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks7" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.點最後一頁。
+                     <hr>
+                     2.點擊往第一頁。
+                     <hr>
+                     3.檢查是否在第一頁。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks8" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.下拉式選單選擇「20」。
+                     <hr>
+                     2.檢查表格內容是否為20。
+                     </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+         <div id="Stocks9" class="content">
+            <div class="main-header anim" style="--delay: 0s">檢查Configuration欄位是否為Null
+            </div>
+            <div class="main-blogs">
+               <div class="main-blog anim" style="--delay: .1s">
+                  <div class="main-blog__title">1.檢查每項Configuration欄位是否為Null
+                  </div>
+                  <div class="main-blog__author">
+                  </div>
+               </div>
+            </div>
+            <div class="small-header anim" style="--delay: .3s">展示</div>
+         </div>
+      </div>
+   </div>
+   <!--  -->
+
+   </div>
+
+   <!-- BG -->
+   <div id="bg"></div>
+
+   <!-- Scripts -->
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
+   <!-- <script src="assets/js/browser.min.js"></script>
+   <script src="assets/js/breakpoints.min.js"></script>
+   <script src="assets/js/util.js"></script> -->
+   <script src="assets/js/AutoTest.js"></script>
+
+</body>
+
+</html>
+     
