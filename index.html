@@ -75,10 +75,12 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
-               <div class="image-slider">
-                  <button class="prev" onclick="changeImage(-1)"></button>
-                  <img id="slider-image" src="assets/image/TestConfigurationsPageAsync/1.png" alt="1">
-                  <button class="next" onclick="changeImage(1)"></button>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(-1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(1)"></button>
+                  </div>
                </div>
             </div>
             <div id="Customers2" class="content">
@@ -567,16 +569,16 @@
                <select class="Configurations-bar" onchange="showContent(this.value)">
                   <option value="Configurations0"></option>
                   <option value="Configurations1">TestConfigurationsPageAsync</option>
-                  <option value="Configurations2">TestConfigurationsPageFindTableAsync</option>
-                  <option value="Configurations3">TestConfigurationsPageSearchAsync</option>
-                  <option value="Configurations4">TestConfigurationsPageNextPageAsync</option>
-                  <option value="Configurations5">TestConfigurationsPageLastPageAsync</option>
-                  <option value="Configurations6">TestConfigurationsPagePreviousPageAsync</option>
-                  <option value="Configurations7">TestConfigurationsPageFirstPageAsync</option>
-                  <option value="Configurations8">TestConfigurationsPageSelectAsync</option>
-                  <option value="Configurations9">TestConfigurationsPagePreviousPageAsync</option>
-                  <option value="Configurations10">TestConfigurationsPageFirstPageAsync</option>
-                  <option value="Configurations11">TestConfigurationsPageSelectAsync</option>
+                  <option value="Configurations2">TestConfigurationsPageSearchAsync</option>
+                  <option value="Configurations3">TestConfigurationsPageNextPageAsync</option>
+                  <option value="Configurations4">TestConfigurationsPageLastPageAsync</option>
+                  <option value="Configurations5">TestConfigurationsPagePreviousPageAsync</option>
+                  <option value="Configurations6">TestConfigurationsPageFirstPageAsync</option>
+                  <option value="Configurations7">TestConfigurationsPageSelectAsync</option>
+                  <option value="Configurations8">TestConfigurationPageCreateSuccessAsync</option>
+                  <option value="Configurations9">TestConfigurationPageCreateFailAsync</option>
+                  <option value="Configurations10">TestConfigurationsPageDeletePageAsync</option>
+                  <option value="Configurations11">TestConfigurationsPageEditAsync</option>
                </select>
             </div>
             <div id="Configurations1" class="content">
@@ -592,6 +594,13 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageAsync/1.png" alt="1">
+                  </div>
+               </div>
+               <!--                <div class="imageIndexDisplay">PAGE:1</div>
+ -->
             </div>
             <div id="Configurations2" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查Search功能</div>
@@ -606,6 +615,13 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageSearchAsync/1.png" alt="1">
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
             </div>
             <div id="Configurations3" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查下一頁功能</div>
@@ -620,6 +636,13 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageNextPageAsync/1.png" alt="1">
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
             </div>
             <div id="Configurations4" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查最後一頁功能</div>
@@ -634,6 +657,13 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageLastPageAsync/1.png" alt="1">
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
             </div>
             <div id="Configurations5" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查上一頁功能</div>
@@ -648,6 +678,16 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationsPagePreviousPageAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationsPagePreviousPageAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationsPagePreviousPageAsync, 1)"></button>
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
             <div id="Configurations6" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查回到第一頁功能</div>
@@ -664,6 +704,14 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageFirstPageAsync/1.png" alt="1">
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
             <div id="Configurations7" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查表格顯示數量</div>
@@ -677,7 +725,18 @@
                      </div>
                   </div>
                </div>
+               
                <div class="small-header anim" style="--delay: .3s">展示</div>
+              
+                <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationPageSelectAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationsPageSelectAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationPageSelectAsync, 1)"></button>
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
             </div>
             <div id="Configurations8" class="content">
                <div class="main-header anim" style="--delay: 0s">(成功)檢查CREATE功能</div>
@@ -696,6 +755,16 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationPageCreateSuccessAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationPageCreateSuccessAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationPageCreateSuccessAsync, 1)"></button>
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
             <div id="Configurations9" class="content">
                <div class="main-header anim" style="--delay: 0s">(失敗)檢查CREATE功能</div>
@@ -714,6 +783,17 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationPageCreateFailAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationPageCreateFailAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationPageCreateFailAsync, 1)"></button>
+
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
             <div id="Configurations10" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查DELETE功能</div>
@@ -738,6 +818,16 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationPageDeleteAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationPageDeleteAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationPageDeleteAsync, 1)"></button>
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
             <div id="Configurations11" class="content">
                <div class="main-header anim" style="--delay: 0s">檢查修改功能</div>
@@ -760,6 +850,16 @@
                   </div>
                </div>
                <div class="small-header anim" style="--delay: .3s">展示</div>
+               <div class="small-header anim" style="--delay: .5s">
+                  <div class="image-slider">
+                     <button class="prev" onclick="changeImage(ImagesTestConfigurationPageEditAsync, -1)"></button>
+                     <img class="slider-image" src="assets/image/TestConfigurationPageEditAsync/1.png" alt="1">
+                     <button class="next" onclick="changeImage(ImagesTestConfigurationPageDeleteAsync, 1)"></button>
+                  </div>
+               </div>
+                              <!-- <div class="imageIndexDisplay">PAGE:1</div> -->
+
+
             </div>
          </div>
          <!--  -->
@@ -929,6 +1029,8 @@
    <script src="assets/js/breakpoints.min.js"></script>
    <script src="assets/js/util.js"></script> -->
    <script src="assets/js/AutoTest.js"></script>
+   <script src="assets/js/ImageConfiguration.js"></script>
+
 
 </body>
 

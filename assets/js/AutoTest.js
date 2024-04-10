@@ -8,9 +8,9 @@ function showContent(value) {
     if (selectedContent) {
         selectedContent.style.display = 'block';
     }
+   
+
 }
-
-
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.sidebar-link');
     
@@ -38,17 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-var images = [
-    "assets/image/TestConfigurationsPageAsync/1.png",
-];
-var imageIndex = 0;
-
-function changeImage(direction) {
-    imageIndex = imageIndex + direction;
-    if (imageIndex < 0) {
-        imageIndex = images.length - 1;
-    } else if (imageIndex >= images.length) {
-        imageIndex = 0;
-    }
-    document.getElementById('slider-image').src = images[imageIndex];
-}
