@@ -58,7 +58,7 @@ body:before {
 }
 
 .image-slider img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
