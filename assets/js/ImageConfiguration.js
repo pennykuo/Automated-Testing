@@ -1,27 +1,27 @@
-var ImagesTestConfigurationPageEditAsync = [
-    "assets/image/TestConfigurationPageEditAsync/1.png",
-    "assets/image/TestConfigurationPageEditAsync/2.png"
+var ImagesTestConfigurationsPageEditAsync = [
+    "assets/image/TestConfigurationsPageEditAsync/1.png",
+    "assets/image/TestConfigurationsPageEditAsync/2.png"
 
 ];
-var ImagesTestConfigurationPageDeleteAsync = [
-    "assets/image/TestConfigurationPageDeleteAsync/1.png",
-    "assets/image/TestConfigurationPageDeleteAsync/2.png",
-    "assets/image/TestConfigurationPageDeleteAsync/3.png"
+var ImagesTestConfigurationsPageDeleteAsync = [
+    "assets/image/TestConfigurationsPageDeleteAsync/1.png",
+    "assets/image/TestConfigurationsPageDeleteAsync/2.png",
+    "assets/image/TestConfigurationsPageDeleteAsync/3.png"
 ];
-var ImagesTestConfigurationPageCreateFailAsync = [
-    "assets/image/TestConfigurationPageCreateFailAsync/1.png",
-    "assets/image/TestConfigurationPageCreateFailAsync/2.png"
+var ImagesTestConfigurationsPageCreateFailAsync = [
+    "assets/image/TestConfigurationsPageCreateFailAsync/1.png",
+    "assets/image/TestConfigurationsPageCreateFailAsync/2.png"
 
 ];
-var ImagesTestConfigurationPageCreateSuccessAsync = [
-    "assets/image/TestConfigurationPageCreateSuccessAsync/1.png",
-    "assets/image/TestConfigurationPageCreateSuccessAsync/2.png"
+var ImagesTestConfigurationsPageCreateSuccessAsync = [
+    "assets/image/TestConfigurationsPageCreateSuccessAsync/1.png",
+    "assets/image/TestConfigurationsPageCreateSuccessAsync/2.png"
 ];
 var ImagesTestConfigurationsPagePreviousPageAsync = [
     "assets/image/TestConfigurationsPagePreviousPageAsync/1.png",
     "assets/image/TestConfigurationsPagePreviousPageAsync/2.png"
 ];
-var ImagesTestConfigurationPageSelectAsync = [
+var ImagesTestConfigurationsPageSelectAsync = [
     "assets/image/TestConfigurationsPageSelectAsync/1.png",
     "assets/image/TestConfigurationsPageSelectAsync/2.png"
 ];
