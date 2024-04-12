@@ -115,7 +115,9 @@ body:before {
   overflow: auto;
 
 }
-
+select{
+  cursor: pointer;
+}
 .sidebar {
   width: 220px;
   height: 100%;
